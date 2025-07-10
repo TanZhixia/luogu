@@ -48,6 +48,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "iomanip": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "stdio.h": "c"
     }
 }
