@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.pro": "project",
         "iostream": "cpp",
         "__bit_reference": "cpp",
         "__hash_table": "cpp",
@@ -49,6 +50,7 @@
         "algorithm": "cpp",
         "iomanip": "cpp",
         "__config": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "map": "cpp"
     }
 }
