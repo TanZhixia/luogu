@@ -51,6 +51,7 @@
         "iomanip": "cpp",
         "__config": "cpp",
         "stdio.h": "c",
-        "map": "cpp"
+        "map": "cpp",
+        "__tree": "cpp"
     }
 }
