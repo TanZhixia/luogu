@@ -52,6 +52,10 @@
         "__config": "cpp",
         "stdio.h": "c",
         "map": "cpp",
-        "__tree": "cpp"
+        "__tree": "cpp",
+        "__assert": "cpp",
+        "iterator": "cpp",
+        "functional": "cpp",
+        "type_traits": "cpp"
     }
 }
