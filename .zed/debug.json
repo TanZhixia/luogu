@@ -1,0 +1,22 @@
+// Project-local debug tasks
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "adapter": "CodeLLDB",
+    "label": "test (CodeLLDB)",
+    "request": "launch",
+    "name": "test (CodeLLDB)",
+    "program": "$ZED_STEM",
+    "stopOnEntry": false,
+    "cwd": "/Users/tan_zhixia/Documents/Code/C_C++/luogu",
+    "build": {
+      "command": "g++",
+      "args": ["$ZED_FILE", "-o", "$ZED_STEM", "-g"]
+    },
+    "exitCommands": [
+      "script import os; os.system('rm $ZED_STEM'); os.system('rm -r $ZED_STEM.dSYM')"
+    ]
+  }
+]
