@@ -14,3 +14,4 @@
 - https://www.luogu.com.cn/problem/P14079
 ## wa
 - https://www.luogu.com.cn/problem/P10289
+- https://www.luogu.com.cn/problem/P14080
