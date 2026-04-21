@@ -1,7 +1,5 @@
 // https://www.luogu.com.cn/problem/P14923
 #include <bits/stdc++.h>
-#include <functional>
-#include <queue>
 #define int long long
 using namespace std;
 struct Node {

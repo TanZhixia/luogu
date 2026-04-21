@@ -1,8 +1,5 @@
 // https://www.luogu.com.cn/problem/P11966
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 struct node {
     int v, d;

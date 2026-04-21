@@ -1,7 +1,5 @@
 // https://www.luogu.com.cn/problem/P10113
-#include <iostream>
-#include <vector>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 const int N = 100005;
 vector<int> t[N];
