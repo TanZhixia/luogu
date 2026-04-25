@@ -11,9 +11,9 @@ int ans;
 stack<int> s1, s2;
 signed main() {
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i ++)
         cin >> a[i];
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i ++)
         s[i] = s[i - 1] + a[i];
     for (int i = 1; i <= n; i ++) {
         while (!s1.empty() && a[s1.top()] > a[i]) {

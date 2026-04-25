@@ -10,7 +10,7 @@ int main() {
         cin >> a[i];
     for (int i = 1; i <= n; i ++) {
         f[i] = f2[i] = 1;
-        for(int j = 1; j < i; j++){
+        for(int j = 1; j < i; j ++){
             if (a[j] > a[i]) {
                 if (f[i] < f[j] + 1)
                     f[i] = f[j] + 1, f2[i] = f2[j];

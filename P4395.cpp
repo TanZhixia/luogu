@@ -10,14 +10,14 @@ void add(int a, int b) {
     ver[tot] = b;
 }
 void dfs(int x, int fa) {
-    for (int i = 1; i <= 15; i++)
+    for (int i = 1; i <= 15; i ++)
         f[x][i] = i;
     for (int i = head[x]; i; i = net[i]) {
         int v = ver[i];
         if (v == fa)
             continue;
         dfs(v, x);
-        for (int j = 1; j <= 15; j++) {
+        for (int j = 1; j <= 15; j ++) {
             int minn = 0x3f3f3f3f;
             for (int k = 1; k <= 15; k++) {
                 if (j != k)
@@ -29,14 +29,14 @@ void dfs(int x, int fa) {
 }
 int main() {
     scanf("%d", &n);
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i ++) {
         int a, b;
         scanf("%d%d", &a, &b);
         add(a, b);
         add(b, a);
     }
     dfs(1, 0);
-    for (int i = 1; i <= 15; i++)
+    for (int i = 1; i <= 15; i ++)
         ans = min(ans, f[1][i]);
     printf("%d", ans);
     return 0;

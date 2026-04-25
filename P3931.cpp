@@ -30,7 +30,7 @@ void dfs(int node) {
 }
 int main() {
     cin >> n >> root;
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i ++) {
         int a, b, c;
         cin >> a >> b >> c;
         v[a].push_back({b, c});

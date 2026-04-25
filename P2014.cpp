@@ -8,11 +8,11 @@ map<int, int> ma[307];
 int sid[307];
 int dp[307][307];
 void dfs(int xi) {
-    for (int i = 1; i <= sid[xi]; i++) {
+    for (int i = 1; i <= sid[xi]; i ++) {
         int yi = ma[xi][i];
         dfs(yi);
     }
-    for (int i = 1; i <= sid[xi]; i++) {
+    for (int i = 1; i <= sid[xi]; i ++) {
         int yi = ma[xi][i];
         for (int j = m; j > 0; j--) {
             for (int fp = 0; fp < j; fp++) {
@@ -24,8 +24,8 @@ void dfs(int xi) {
 }
 int main() {
     cin >> n >> m;
-    m++;
-    for (int i = 1; i <= n; i++) {
+    m ++;
+    for (int i = 1; i <= n; i ++) {
         cin >> k >> dp[i][1];
         sid[k]++;
         ma[k][sid[k]] = i;

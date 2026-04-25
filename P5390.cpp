@@ -13,7 +13,7 @@ int main() {
             cin >> a;
             sum |= a;
         }
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i < n; i ++)
             sum = (sum * 2) % 998244353;
         cout << sum << endl;
     }
