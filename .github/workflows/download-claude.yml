@@ -1,0 +1,19 @@
+name: Download Claude Desktop
+on:
+  workflow_dispatch:
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Claude Desktop DMG
+        run: |
+          curl -L -o claude.zip "https://downloads.claude.ai/releases/darwin/universal/1.10628.0/Claude-b4f860bb5e61a4289cf2a8bca78f006ebde1bb3f.zip"
+          echo "File size:"
+          ls -lh claude.zip
+          sha256sum claude.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-desktop-mac
+          path: claude.zip
