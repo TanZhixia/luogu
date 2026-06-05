@@ -1,0 +1,17 @@
+name: D
+on:
+  workflow_dispatch:
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -sL -o c.zip "https://downloads.claude.ai/releases/darwin/universal/1.10628.0/Claude-b4f860bb5e61a4289cf2a8bca78f006ebde1bb3f.zip"
+      - run: curl -sL -o cc.tar.zst "https://downloads.claude.ai/claude-code-releases/2.1.160/darwin-arm64/claude.app.tar.zst"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dmg
+          path: c.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cli
+          path: cc.tar.zst
